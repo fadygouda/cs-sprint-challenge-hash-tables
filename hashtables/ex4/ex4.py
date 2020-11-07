@@ -2,6 +2,16 @@ def has_negatives(a):
     """
     YOUR CODE HERE
     """
+    neg = {}
+    for i in a:
+        if i < 0:
+            neg[abs(i)] = i
+
+    result = []
+
+    for i in a:
+        if i in neg:
+            result.append(i)
     # Your code here
 
     return result
